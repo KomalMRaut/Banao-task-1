@@ -9,7 +9,6 @@ button {
 
 .app {
   font-family: IBM Plex Sans, Arial, Helvetica, sans-serif;
-  height: 165.25rem;
 }
 
 .app .navigation {
@@ -26,6 +25,16 @@ button {
   -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
   padding: 0 4.5rem;
+}
+
+@media (max-width: 960px) {
+  .app .navigation {
+    height: 1.5rem;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 0.75rem;
+  }
 }
 
 .app .navigation .nav__searchbar {
@@ -58,13 +67,13 @@ button {
 }
 
 .app .navigation .nav__btn {
-  background-color: transparent;
-  width: 12.5rem;
+  width: 13.125rem;
+}
+
+.app .navigation .nav__btn .nav__btn__dropdown {
+  font-size: 0.875rem;
+  background: transparent;
   border: none;
-  outline: none;
-  font-weight: 500;
-  font-size: 1rem;
-  color: #2e2e2e;
 }
 
 .app .head-sec {
@@ -72,10 +81,71 @@ button {
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.6))), url("./Assets/Heading.svg");
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%), url("./Assets/Heading.svg");
-  margin-bottom: 2.5rem;
   background-size: cover;
+  margin-bottom: 2.5rem;
   padding-top: 19rem;
   padding-left: 13.25rem;
+}
+
+@media (max-width: 1200px) {
+  .app .head-sec {
+    height: 26.5rem;
+    padding-top: 16rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .app .head-sec {
+    height: 22.5rem;
+    padding-top: 14rem;
+    padding-left: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .app .head-sec {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 14.75rem;
+    padding: 1.25rem 1rem 2rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.6))), url("./Assets/HeadingMobile.svg");
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%), url("./Assets/HeadingMobile.svg");
+  }
+}
+
+.app .head-sec .head-sec__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+}
+
+.app .head-sec .head-sec__nav .head-sec__nav__btn {
+  text-decoration: none;
+  background: transparent;
+  outline: none;
+  width: 4.75rem;
+  height: 1.75rem;
+  border: 0.8px solid #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.75rem;
 }
 
 .app .head-sec .head-sec__txt .head-sec__heading {
@@ -84,13 +154,33 @@ button {
   color: #ffffff;
 }
 
+@media (max-width: 480px) {
+  .app .head-sec .head-sec__txt .head-sec__heading {
+    font-size: 1rem;
+  }
+}
+
 .app .head-sec .head-sec__txt .head-sec__sub-heading {
   font-size: 1.125rem;
   color: #ffffff;
 }
 
+@media (max-width: 480px) {
+  .app .head-sec .head-sec__txt .head-sec__sub-heading {
+    font-size: 0.75rem;
+  }
+}
+
 .app .main-sec {
   padding: 0 13.25rem;
+}
+
+@media (max-width: 960px) {
+  .app .main-sec {
+    padding: 0 2rem;
+    max-width: 32.5rem;
+    margin: auto;
+  }
 }
 
 .app .main-sec .main__post-nav {
@@ -114,6 +204,19 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.app .main-sec .main__post-nav .post-nav__sections .post__mobile {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  margin-right: 1.25rem;
+  text-decoration: none;
+  padding-bottom: 1.25rem;
+  font-weight: bold;
+  font-size: 0.875rem;
+  letter-spacing: 0.01rem;
+  color: #212529;
 }
 
 .app .main-sec .main__post-nav .post-nav__sections .post {
@@ -162,6 +265,12 @@ button {
 
 .app .main-sec .main__posts .main__posts__cards {
   width: 67%;
+}
+
+@media (max-width: 1200px) {
+  .app .main-sec .main__posts .main__posts__cards {
+    width: 100%;
+  }
 }
 
 .app .main-sec .main__posts .main__posts__location {
