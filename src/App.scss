@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap");
+html {
+  font-size: 100%;
+}
+button {
+  cursor: pointer;
+}
+.app {
+  font-family: IBM Plex Sans, Arial, Helvetica, sans-serif;
+  height: 165.25rem;
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4.75rem;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+    padding: 0 4.5rem;
+    .nav__searchbar {
+      display: flex;
+      align-items: center;
+      padding: 0 1rem;
+      height: 2.625rem;
+      width: 22.5rem;
+      background: #f2f2f2;
+      border-radius: 1.375rem;
+      .nav__search-icon {
+        color: #7a7a7a;
+      }
+      .search__txt {
+        width: 85%;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-weight: 500;
+        font-size: 0.875rem;
+        color: #5c5c5c;
+      }
+    }
+    .nav__btn {
+      background-color: transparent;
+      width: 12.5rem;
+      border: none;
+      outline: none;
+      font-weight: 500;
+      font-size: 1rem;
+      color: #2e2e2e;
+    }
+  }
+  .head-sec {
+    height: 29.5rem;
+    width: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.45) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      ),
+      url("./Assets/Heading.svg");
+    margin-bottom: 2.5rem;
+    background-size: cover;
+    padding-top: 19rem;
+    padding-left: 13.25rem;
+    .head-sec__txt {
+      .head-sec__heading {
+        font-weight: bold;
+        font-size: 2.25rem;
+        color: #ffffff;
+      }
+      .head-sec__sub-heading {
+        font-size: 1.125rem;
+        color: #ffffff;
+      }
+    }
+  }
+  .main-sec {
+    padding: 0 13.25rem;
+    .main__post-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 1.75rem;
+      .post-nav__sections {
+        display: flex;
+        align-items: center;
+        .post {
+          outline: none;
+          border: none;
+          background-color: transparent;
+          margin-right: 1.25rem;
+          text-decoration: none;
+          font-size: 1rem;
+          color: #8a8a8a;
+          padding-bottom: 1.25rem;
+        }
+        .post--active {
+          color: #000;
+          border-bottom: 1px solid #000;
+        }
+      }
+      .post-nav__btns {
+        padding-bottom: 0.5rem;
+        .post-nav__btns__light-btn {
+          width: 133px;
+          height: 36px;
+          background: #edeef0;
+          border-radius: 4px;
+        }
+        .post-nav__btns__primary-btn {
+          width: 125px;
+          height: 36px;
+          background: #2f6ce5;
+          border-radius: 4px;
+          margin-left: 1rem;
+        }
+      }
+    }
+    .main__posts {
+      display: flex;
+      justify-content: space-between;
+      .main__posts__cards {
+        width: 67%;
+      }
+      .main__posts__location {
+        width: 23.36%;
+        .location__details {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-bottom: 0.75rem;
+          border-bottom: 0.4px solid #b8b8b8;
+          margin-bottom: 2rem;
+          .location__txt {
+            font-size: 0.875rem;
+            color: #000000;
+          }
+        }
+        .location__info {
+          display: flex;
+          font-size: 0.75rem;
+          color: #000000;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+
+.sign-in {
+  .sign-in__input {
+    background: #f7f8fa;
+    border: 1px solid #d9d9db;
+    box-sizing: border-box;
+    border-radius: 2px 2px 0 0;
+    height: 2.875rem;
+    width: 100%;
+    padding-left: 0.75rem;
+    font-size: 1rem;
+  }
+  .sign-in__btn {
+    margin-top: 2rem;
+    border: none;
+    width: 20rem;
+    height: 2.5rem;
+    background: #2f6ce5;
+    border-radius: 1.25rem;
+    text-align: center;
+    color: #ffffff;
+  }
+  .sign-in__using {
+    margin-top: 0.5rem;
+    width: 20rem;
+    height: 2.375rem;
+    background: #ffffff;
+    border: 0.6px solid #d9d9db;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
+}
+.sign-up {
+  .sign-up__input {
+    background: #f7f8fa;
+    border: 1px solid #d9d9db;
+    box-sizing: border-box;
+    border-radius: 2px 2px 0 0;
+    height: 2.875rem;
+    width: 100%;
+    padding-left: 0.75rem;
+    font-size: 1rem;
+  }
+  .sign-up__btn {
+    margin-top: 2rem;
+    border: none;
+    width: 20rem;
+    height: 2.5rem;
+    background: #2f6ce5;
+    border-radius: 1.25rem;
+    text-align: center;
+    color: #ffffff;
+  }
+  .sign-up__using {
+    margin-top: 0.5rem;
+    width: 20rem;
+    height: 2.375rem;
+    background: #ffffff;
+    border: 0.6px solid #d9d9db;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  .card__img {
+    width: 100%;
+    height: auto;
+  }
+  .card__title {
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: #000000;
+    margin-top: 1.25rem;
+    margin-bottom: 0.625rem;
+  }
+  .card__heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    .heading__txt {
+      font-weight: 600;
+      font-size: 1.375rem;
+      color: #000000;
+      margin-bottom: 0.75rem;
+    }
+  }
+  .personal__info {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 1rem;
+  }
+  .personal__btn {
+    text-decoration: none;
+    outline: none;
+    width: 100%;
+    height: 2.25rem;
+    background: #ffffff;
+    border: 0.7px dashed #a9aeb8;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+  .card__info {
+    font-size: 1.188rem;
+    color: #5c5c5c;
+    margin-bottom: 2rem;
+  }
+  .card__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .footer__name {
+      font-weight: 600;
+      font-size: 1.125rem;
+      color: #000000;
+    }
+    .view-count {
+      font-weight: 500;
+      font-size: 0.875rem;
+      margin-left: 0.5rem;
+      margin-right: 2.5rem;
+    }
+  }
+}

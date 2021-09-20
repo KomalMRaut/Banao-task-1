@@ -1,306 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap");
 html {
-  font-size: 62.5%;
+  font-size: 100%;
 }
 
-a {
-  outline: none;
+button {
+  cursor: pointer;
 }
 
-h1 {
-  font-size: 3.2rem;
+.app {
+  font-family: IBM Plex Sans, Arial, Helvetica, sans-serif;
+  height: 165.25rem;
 }
 
-h2 {
-  font-size: 2.4rem;
-}
-
-h3 {
-  font-size: 1.872rem;
-}
-
-h4 {
-  font-size: 1.6rem;
-}
-
-h5 {
-  font-size: 1.328rem;
-}
-
-h6 {
-  font-size: 1.2rem;
-}
-.Navbar {
-  display: grid;
-  align-items: center;
-  width: 100%;
-  height: 7.2rem;
-  left: 0;
-  top: 0;
-  background: #ffffff;
-  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.12);
-}
-
-.Navbar .NavDiv {
+.app .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  padding: 0px 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 4.75rem;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+  padding: 0 4.5rem;
 }
 
-.Navbar .SearchBar {
-  width: 25%;
-  height: 4.2rem;
+.app .navigation .nav__searchbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1rem;
+  height: 2.625rem;
+  width: 22.5rem;
   background: #f2f2f2;
-  border-radius: 2.1rem;
+  border-radius: 1.375rem;
 }
 
-.Navbar .SearchBar .searchIcon {
-  position: absolute;
+.app .navigation .nav__searchbar .nav__search-icon {
   color: #7a7a7a;
-  margin: 1.2rem 0 0 1.6rem;
-  font-size: 1.8rem;
 }
 
-.Navbar .SearchBar .Searchtext {
-  position: absolute;
+.app .navigation .nav__searchbar .search__txt {
+  width: 85%;
   text-decoration: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #5c5c5c;
+}
+
+.app .navigation .nav__btn {
+  background-color: transparent;
+  width: 12.5rem;
+  border: none;
   outline: none;
   font-weight: 500;
-  font-size: 1.4rem;
-  line-height: 1.8rem;
-  background: transparent;
-  border: none;
-  width: 22%;
-  padding: 1rem 0 0 5rem;
+  font-size: 1rem;
+  color: #2e2e2e;
 }
 
-input::placeholder {
-  font-size: 1.4rem;
-}
-
-.Navbar .Dropdown {
-  width: 21rem;
-  height: 2.1rem;
-}
-
-.Navbar .Dropdown .DropItem {
-  margin-right: 1.9rem;
-  color: white;
-  margin-top: 2.2rem;
-}
-
-.Navbar .Dropdown .Dropbutton {
-  font-size: 1.4rem;
-  background: transparent;
-  border: none;
-}
-
-.MainPage {
-  position: absolute;
-  top: 7.2rem;
+.app .head-sec {
+  height: 29.5rem;
   width: 100%;
-  height: 100%;
-}
-
-.MainPage .Heading {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 44rem;
-  color: #ffffff;
-  padding: 28.6rem 86.2rem 10.7rem 20rem;
-  background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.45) 0%,
-      rgba(0, 0, 0, 0.6) 100%
-    ),
-    url("./Assets/Heading.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.6))), url("./Assets/Heading.svg");
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%), url("./Assets/Heading.svg");
+  margin-bottom: 2.5rem;
   background-size: cover;
-  z-index: -1;
+  padding-top: 19rem;
+  padding-left: 13.25rem;
 }
 
-.MainPage .Pannel {
-  position: absolute;
-  top: 44rem;
-  margin: 4.7rem 0 0 20rem;
-  width: 74%;
+.app .head-sec .head-sec__txt .head-sec__heading {
+  font-weight: bold;
+  font-size: 2.25rem;
+  color: #ffffff;
 }
 
-.Pannel ul {
-  margin: 0;
-  padding: 0;
-  text-align: right;
+.app .head-sec .head-sec__txt .head-sec__sub-heading {
+  font-size: 1.125rem;
+  color: #ffffff;
+}
+
+.app .main-sec {
+  padding: 0 13.25rem;
+}
+
+.app .main-sec .main__post-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  vertical-align: middle;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 1.75rem;
 }
 
-.Pannel ul li {
-  display: inline-block;
-  font-size: 1.6rem;
+.app .main-sec .main__post-nav .post-nav__sections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.Pannel ul li.active-link a {
-  color: black;
-}
-
-.Pannel ul li a {
-  color: #8a8a8a;
-  text-decoration: none;
-  display: inline-block;
-  padding: 1rem;
-  transition: color 0.5s;
-}
-
-.Pannel ul li .underline {
-  height: 0.3rem;
-  background-color: transparent;
-  width: 0%;
-  transition: width 0.2s, background-color 0.5s;
-  margin: 0 auto;
-}
-
-.Pannel ul li.active-link .underline {
-  width: 100%;
-  background-color: black;
-}
-
-.Pannel ul li:hover .underline {
-  background-color: black;
-  width: 100%;
-}
-
-.Pannel ul li:active a {
-  transition: none;
-  color: black;
-}
-
-.Pannel ul li:active .underline {
-  transition: none;
-  background-color: rgba(0, 0, 0, 0.76);
-}
-
-.Pannel .PostB {
-  font-size: 1.4rem;
-  margin-right: 1.6rem;
-  width: 13.3rem;
-  height: 3.6rem;
-}
-
-.Pannel .JoinB {
-  font-size: 1.4rem;
-  width: 12.5rem;
-  height: 3.6rem;
-}
-
-.Pannel .Location {
-  position: absolute;
-  right: 0;
-  margin-top: 5.6rem;
-}
-
-.MainPage .Body {
-  position: absolute;
-  top: 51.6rem;
-  margin: 4.7rem 0 0 20rem;
-}
-
-.Signup-Input {
-  background: #f7f8fa;
-  border: 0.1rem solid #d9d9db;
-  box-sizing: border-box;
-  border-radius: 0.2rem 0.2rem 0 0;
-  height: 4.6rem;
-  width: 32rem;
-  padding-left: 1.2rem;
-  font-size: 1.5rem;
-}
-
-.Signup-btn {
-  margin-top: 3.1rem;
+.app .main-sec .main__post-nav .post-nav__sections .post {
+  outline: none;
   border: none;
-  width: 32rem;
-  height: 4rem;
+  background-color: transparent;
+  margin-right: 1.25rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #8a8a8a;
+  padding-bottom: 1.25rem;
+}
+
+.app .main-sec .main__post-nav .post-nav__sections .post--active {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+.app .main-sec .main__post-nav .post-nav__btns {
+  padding-bottom: 0.5rem;
+}
+
+.app .main-sec .main__post-nav .post-nav__btns .post-nav__btns__light-btn {
+  width: 133px;
+  height: 36px;
+  background: #edeef0;
+  border-radius: 4px;
+}
+
+.app .main-sec .main__post-nav .post-nav__btns .post-nav__btns__primary-btn {
+  width: 125px;
+  height: 36px;
   background: #2f6ce5;
-  border-radius: 2rem;
+  border-radius: 4px;
+  margin-left: 1rem;
+}
+
+.app .main-sec .main__posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.app .main-sec .main__posts .main__posts__cards {
+  width: 67%;
+}
+
+.app .main-sec .main__posts .main__posts__location {
+  width: 23.36%;
+}
+
+.app .main-sec .main__posts .main__posts__location .location__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 0.75rem;
+  border-bottom: 0.4px solid #b8b8b8;
+  margin-bottom: 2rem;
+}
+
+.app .main-sec .main__posts .main__posts__location .location__details .location__txt {
+  font-size: 0.875rem;
+  color: #000000;
+}
+
+.app .main-sec .main__posts .main__posts__location .location__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.75rem;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.sign-in .sign-in__input {
+  background: #f7f8fa;
+  border: 1px solid #d9d9db;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px 2px 0 0;
+  height: 2.875rem;
+  width: 100%;
+  padding-left: 0.75rem;
+  font-size: 1rem;
+}
+
+.sign-in .sign-in__btn {
+  margin-top: 2rem;
+  border: none;
+  width: 20rem;
+  height: 2.5rem;
+  background: #2f6ce5;
+  border-radius: 1.25rem;
   text-align: center;
   color: #ffffff;
 }
 
-.Signup-using {
-  margin-top: 0.8rem;
-  width: 32rem;
-  height: 3.8rem;
+.sign-in .sign-in__using {
+  margin-top: 0.5rem;
+  width: 20rem;
+  height: 2.375rem;
   background: #ffffff;
-  border: 0.06rem solid #d9d9db;
-  box-sizing: border-box;
-  border-radius: 0.2rem;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
+  border: 0.6px solid #d9d9db;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
+  font-size: 0.875rem;
+  line-height: 1rem;
 }
 
-@media (max-width: 1300px) {
-  html {
-    font-size: 48%;
-  }
+.sign-up .sign-up__input {
+  background: #f7f8fa;
+  border: 1px solid #d9d9db;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px 2px 0 0;
+  height: 2.875rem;
+  width: 100%;
+  padding-left: 0.75rem;
+  font-size: 1rem;
 }
 
-@media (max-width: 1024px) {
-  html {
-    font-size: 40%;
-  }
+.sign-up .sign-up__btn {
+  margin-top: 2rem;
+  border: none;
+  width: 20rem;
+  height: 2.5rem;
+  background: #2f6ce5;
+  border-radius: 1.25rem;
+  text-align: center;
+  color: #ffffff;
 }
 
-@media (max-width: 900px) {
-  html {
-    font-size: 35%;
-  }
-  .Navbar .SearchBar,
-  .Location,
-  .PlaceBtn {
-    height: 0;
-    width: 0;
-    display: none;
-  }
+.sign-up .sign-up__using {
+  margin-top: 0.5rem;
+  width: 20rem;
+  height: 2.375rem;
+  background: #ffffff;
+  border: 0.6px solid #d9d9db;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
+  font-size: 0.875rem;
+  line-height: 1rem;
 }
 
-@media (max-width: 420px) {
-  .Navbar {
-    height: 3rem;
-  }
-  .Navbar .NavDiv {
-    display: flex;
-    justify-content: flex-end;
-    align-self: baseline;
-    padding: 0.7rem 1.2rem 0 0;
-  }
-  .MainPage {
-    position: absolute;
-    top: 3rem;
-    width: 100%;
-    height: 100%;
-  }
-
-  .MainPage .Heading {
-    position: absolute;
-    top: 0;
-    width: 30%;
-    height: 30%;
-    color: #ffffff;
-    padding: 28.6rem 86.2rem 10.7rem 20rem;
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.45) 0%,
-        rgba(0, 0, 0, 0.6) 100%
-      ),
-      url("./Assets/Heading.png");
-    background-size: cover;
-    z-index: -1;
-  }
-
-  .MainPage .Pannel {
-    position: absolute;
-    top: 40rem;
-    margin: 4.7rem 0 0 20rem;
-    width: 74%;
-  }
+.card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 1rem;
 }
+
+.card .card__img {
+  width: 100%;
+  height: auto;
+}
+
+.card .card__title {
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #000000;
+  margin-top: 1.25rem;
+  margin-bottom: 0.625rem;
+}
+
+.card .card__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card .card__heading .heading__txt {
+  font-weight: 600;
+  font-size: 1.375rem;
+  color: #000000;
+  margin-bottom: 0.75rem;
+}
+
+.card .personal__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.card .personal__btn {
+  text-decoration: none;
+  outline: none;
+  width: 100%;
+  height: 2.25rem;
+  background: #ffffff;
+  border: 0.7px dashed #a9aeb8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.card .card__info {
+  font-size: 1.188rem;
+  color: #5c5c5c;
+  margin-bottom: 2rem;
+}
+
+.card .card__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card .card__footer .footer__name {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #000000;
+}
+
+.card .card__footer .view-count {
+  font-weight: 500;
+  font-size: 0.875rem;
+  margin-left: 0.5rem;
+  margin-right: 2.5rem;
+}
+/*# sourceMappingURL=App.css.map */
